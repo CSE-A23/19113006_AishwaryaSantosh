@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+  int n,i;
+  char str[100];
+  clrscr();
+  printf("\nEnter the character to check whether the word is ReeWord or not:");
+  scanf("%s",str);
+  n=strlen(str);
+  for(i=0;i<n;i++)
+  {
+    if(n>=6&&n<=20)
+    {
+      if(srr[i]=='r')
+      {
+	if(str[i]=='#'||str[i]=='$'||str[i]=='!'||str[i]=='@')
+	{
+	  if(str[i]!=' ')
+	  {
+	    printf("\nReeWord");
+	  }
+	}
+      }
+    }
+  }
+  printf("\nReeword");
+  if(n<6||n>20)
+	printf("Nay!");
+ getch();
+}
