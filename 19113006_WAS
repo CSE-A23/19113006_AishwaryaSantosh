@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+  char srr[50];
+  int che=0; word=0, spa=0, len=0, i=0, j=0, n=0, c[10];
+  clrscr();
+  printf("Enter a Sentence\t");
+  gets(srr);
+  length=strlen(srr);
+  for(i=n; i<len; i++)
+  {
+    word+=srr[i];
+    if(srr[i]==' ')
+    {
+      c[j]=word-32;
+      word=0;
+      n=i;
+      j++;
+      spa++;
+    }
+  }
+  c[j]=word;
+  for(i=0; i<=spa-1; i++)
+  {
+    if(c[i]>c[i+1])
+      {
+        che=1;
+      }
+  }
+  if(che==1)
+  {
+    printf("\nNOPE");
+  }
+  else
+  {
+    printf("\nWAS");
+  }
+  getch();
+}
+      
+      
+      
+    
+  
+  
